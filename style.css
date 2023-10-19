@@ -1,0 +1,196 @@
+/*Fuentes-estilos extra*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Telis+Heavy&display=swap');
+
+  
+.buscador h1,
+.añadir-peliculas h1, .title {
+  font-family: 'Telis Heavy', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Telis+Heavy&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=FF+Identification+Std+Five+C+Regular&display=swap');
+
+
+
+
+.content h1 {
+  font-family: 'Telis Heavy', sans-serif;
+  font-size: 1.2rem; 
+  margin-bottom: 0.5rem; 
+}
+
+.content p {
+  margin-top: 0.5rem; 
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.90rem;
+}
+
+
+
+.menu .item,
+.footer {
+  font-family: 'FF Identification Std Five C Regular', sans-serif; 
+}
+
+/*Fin fuentes-estilos extra*/
+
+/* Inicio menú de navegación */
+
+.title {
+  text-align: center;
+  font-style: italic;
+}
+
+.content > article {
+  float: left;
+  width: calc(33.33% - 20px);
+  
+}
+
+.icono {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(59,62,238,1);
+  border-radius: 50%;
+  position: absolute; 
+  left: 480px;
+  top: 20px;
+}
+
+.icono::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+
+.item:after {
+  content: '';
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+  width: 0%;
+}
+
+.item:hover:after {
+  width: 100%;
+}
+
+.menu {
+  text-align: center;
+  letter-spacing:3px;
+}
+
+.menu:hover{
+  color: #000;
+  transition: color 0.3s ease; 
+  color: #fff;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 15px;
+}
+
+.menu a {
+  
+  text-decoration: none;
+}
+
+
+
+/* Fin menú de navegación */
+
+/* Inicio cuerpo de pagina */
+
+
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 20px; 
+}
+
+.content > article { 
+  width: auto;
+  float:none;
+}
+
+.lateral {
+  padding-top: 30px; 
+}
+
+
+.buscador {
+  position: absolute;
+  top: 140px; 
+  right: 2%; 
+}
+
+.buscador input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.buscador input[type="button"] {
+  display: block;
+}
+
+.añadir-peliculas{
+  position: absolute;
+  top: 240px; 
+  right: 2%; 
+}
+
+.añadir-peliculas input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.añadir-peliculas textarea {
+  display: block;  
+  margin-bottom: 10px;
+}
+
+.añadir-peliculas input[type="submit"] {
+  display: block;
+}
+
+.items {
+  background-color: rgba(59,62,238,1);
+  color: #fff;
+}
+
+
+/* Fin cuerpo de pagina */  
+
+/*Inicio footer*/
+
+.footer {
+  position: fixed;
+  text-align: center;   
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(59,62,238,1);
+  color: #fff;
+}
+
+
+/*Fin footer*/
